@@ -1,0 +1,26 @@
+.navbar-default {
+	background-color: rgba(67, 89, 100, 0.97);
+	color: #FFF;
+}
+.page-scroll{
+	color: white !important;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav > .active > a{
+	background-color: $blue !important;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    border-color: #FFF;
+    color: #FFF;
+    background-color: #FFF;
+    color: $blue;
+    &:hover{
+    	background-color: #FFF;
+    	color: $blue;
+    }
+}
