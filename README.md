@@ -1,5 +1,5 @@
 # Personal-portfolio
-Le but de ce portfolio permet de montrer les compétences et les différents travaux que j'ai pu entreprendre . 
+Le but de ce portfolio permet de montrer les présenter et les différents travaux que j'ai pu entreprendre . 
 ## Installation
 
 ```git
