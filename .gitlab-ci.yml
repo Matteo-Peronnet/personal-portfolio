@@ -1,3 +1,9 @@
-deploy:
+pages:
+  stage: deploy
   script:
-  - ping google.fr
+    - sudo cp -r dist/* /var/www/personal-portfolio/
+  artifacts:
+    paths:
+    - /var/www/personal-portfolio/
+  only:
+  - master
