@@ -1,9 +1,11 @@
 pages:
   stage: deploy
   script:
+    - sudo mv /var/www/personal-portfolio/project/ /var/www/temp/
     - sudo rm -r /var/www/personal-portfolio/
     - sudo mkdir /var/www/personal-portfolio
     - sudo cp -r dist/* /var/www/personal-portfolio/
+    - sudo mv /var/www/temp/ /var/www/personal-portfolio/project/ 
   artifacts:
     paths:
     - /var/www/personal-portfolio/
