@@ -4,9 +4,9 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="PortFolio">
+      <meta name="description" content="PortFolio Matteo Peronnet">
       <meta name="author" content="Matteo Peronnet">
-      <title>PortFolio MP</title>
+      <title>Mattéo Peronnet PortFolio</title>
       <!-- CSS -->
       <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
       <link rel="stylesheet" href="css/css.min.css">
@@ -19,17 +19,16 @@
          <div class="header-content">
             <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
                <div class="container">
-                  <!-- Brand and toggle get grouped for better mobile display -->
                   <div class="navbar-header">
                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                      Menu <i class="fa fa-bars"></i>
                      </button>
-                     <a class="page-scroll" href="#top-page"><img src="img/logo.png" height="47px" width="72px"></a>
+                     <a class="page-scroll" href="#top-page"><img alt="Logo MP" class="logo" src="img/logo.png" height="47px" width="72px"></a>
                   </div>
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                      <ul class="nav navbar-nav navbar-right">
                         <li>
-                           <a class="page-scroll" href="#profile">Profile</a>
+                           <a class="page-scroll" href="#profile">Profil</a>
                         </li>
                         <li>
                            <a class="page-scroll" href="#competence">Competence</a>
@@ -51,16 +50,17 @@
          </div>
       </header>
       <section id="profile">
-         <div class="container padding-top-50">
-            <div class="row">
+         <div class="container profile padding-top-50 padding-bottom-50">
+            <div class="row row-eq-height">
                <div class="col-sm-6 col-md-5 align-center">
-                  <img class="img-responsive center-img" src="img/avatar.png" height="400px" width="369px">
+                  <img alt="Avatar Matteo" class="img-responsive center-img" src="img/avatar.png" height="400px" width="369px">
                </div>
-               <div class="col-sm-6 col-md-7 border-left">
+               <div class="col-sm-6 col-md-7 bubble">
                   <h2 class="personal-info-title">Bonjour, je suis Mattéo Péronnet, actuellement étudiant en IUT d’informatique.</h2>
                   <p class="personal-info-texte">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquipex ea commodo consequat.</p>
                   <p class="personal-info-texte">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquipex ea commodo consequat.</p>
-                  <a HREF="mailto:matteo-peronnet@hotmail.fr"><button class="personal-info-button hvr-bounce-to-right">Contactez moi</button></a>
+                  <a class="personal-info-button hvr-bounce-to-right" href="mailto:matteo-peronnet@hotmail.fr">Contactez moi</a>
+                  <a class="personal-info-button hvr-bounce-to-right btn-curriculum-vitae" href="#">Curriculum vitae</a>
                </div>
             </div>
          </div>
@@ -273,10 +273,78 @@
                   <hr>
                </div>
             </div>
-            <div class="grid">
-               <a href="#JardinsdesIles">
-                  <div class="grid-item item-project-color-blue" data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal repeat">
-                     <article class="item-project ">
+            <div class="row">
+               <div class="col-md-6 grid-item item-project-color-pink">
+                  <article class="item-project">
+                     <div class="item-project-info">
+                        <h1>Toitures Poitevines V2</h1>
+                        <p>Projet Personnel</p>
+                        <ul>
+                           <li><i class="icon-technologie-uses devicon-symfony-plain"></i></li>
+                           <li><i class="icon-technologie-uses devicon-photoshop-plain"></i></li>
+                           <li><i class="icon-technologie-uses devicon-html5-plain"></i></li>
+                           <li><i class="icon-technologie-uses devicon-css3-plain"></i></li>
+                           <li><i class="icon-technologie-uses devicon-javascript-plain"></i></li>
+                        </ul>
+                     </div>
+                     <div class="item-project-info-links">
+                        <p><a class="hvr-hang" href="#">Code source <i class="devicon-gitlab-plain"></i></a></p>
+                        <p><a class="hvr-hang" href="#">Demo <i class="devicon-chrome-plain"></i> </a></p>
+                     </div>
+                  </article>
+               </div>
+               <div class="col-md-6 grid-item item-project-color-green">
+                  <article class="item-project">
+                     <div class="item-project-info">
+                        <h1>Stade Rochelais</h1>
+                        <p>Projet IUT</p>
+                        <ul>
+                           <li><i class="icon-technologie-uses devicon-symfony-plain"></i></li>
+                           <li><i class="icon-technologie-uses devicon-photoshop-plain"></i></li>
+                           <li><i class="icon-technologie-uses devicon-html5-plain"></i></li>
+                           <li><i class="icon-technologie-uses devicon-css3-plain"></i></li>
+                           <li><i class="icon-technologie-uses devicon-javascript-plain"></i></li>
+                           <li><i class="icon-technologie-uses devicon-git-plain"></i></li>
+                        </ul>
+                     </div>
+                     <div class="item-project-info-links">
+                        <p><a href="#" class="hvr-hang">Code source <i class="devicon-gitlab-plain"></i></p></a>
+                        <p><a href="#" class="hvr-hang">Demo <i class="devicon-chrome-plain"></i> </a></p>
+                     </div>
+                  </article>
+               </div>
+               <div class="col-md-6 grid-item item-project-color-orange">
+                  <article class="item-project">
+                     <div class="item-project-info">
+                        <h1>CDTT 17</h1>
+                        <p>Projet IUT</p>
+                        <ul>
+                           <li><i class="icon-technologie-uses devicon-wordpress-plain"></i></li>
+                           </li>
+                        </ul>
+                        </div>
+                        <div class="item-project-info-links">
+                           <p><a href="#" class="hvr-hang" >Code source <i class="devicon-gitlab-plain"></i></a></p><p><a href="#" class="hvr-hang"  class="hvr-hang">Demo <i class="devicon-chrome-plain"></i> </a></p>
+                        </div>
+                  </article>
+               </div>
+               <div class="col-md-6 grid-item item-project-color-brown">
+                  <article class="item-project">
+                     <div class="item-project-info">
+                        <h1>Toitures Poitevines V1</h1>
+                        <p>Projet Personnel</p>
+                        <ul>
+                           <li><i class="icon-technologie-uses devicon-java-plain"></i></li>
+                        </ul>
+                        </div>
+                        <div class="item-project-info-links">
+                           <p><a href="#" class="hvr-hang" >Code source <i class="devicon-gitlab-plain"></i></a></p><p><a href="#" class="hvr-hang" >Demo <i class="devicon-chrome-plain"></i> </a></p>
+                        </div>
+                  </article>
+               </div>
+               <div class="col-md-6 grid-item item-project-color-blue">
+                  <article class="item-project ">
+                     <div class="item-project-info">
                         <h1>Jardins des Iles</h1>
                         <p>Projet Personnel</p>
                         <ul>
@@ -284,100 +352,40 @@
                            <li><i class="icon-technologie-uses devicon-html5-plain"></i></li>
                            <li><i class="icon-technologie-uses devicon-css3-plain"></i></li>
                         </ul>
-                     </article>
-                  </div>
-               </a>
-               <div class="grid-item item-project-color-brown" data-anijs="if: scroll, on: window, do: rotateIn animated, before: $scrollReveal repeat">
-                  <article class="item-project">
-                     <h1>Toitures Poitevines V1</h1>
-                     <p>Projet Personnel</p>
-                     <ul>
-                        <li><i class="icon-technologie-uses devicon-java-plain"></i></li>
-                     </ul>
+                        </div>
+                        <div class="item-project-info-links">
+                           <p><a href="#" class="hvr-hang" >Code source <i class="devicon-gitlab-plain"></i></a></p><p><a href="#" class="hvr-hang" >Demo <i class="devicon-chrome-plain"></i> </a></p>
+                        </div>
                   </article>
                </div>
-               <div class="grid-item item-project-color-green" data-anijs="if: scroll, on: window, do: bounceIn animated, before: $scrollReveal repeat">
-                  <article class="item-project">
-                     <h1>Stade Rochelais</h1>
-                     <p>Projet IUT</p>
-                     <ul>
-                        <li><i class="icon-technologie-uses devicon-symfony-plain"></i></li>
-                        <li><i class="icon-technologie-uses devicon-photoshop-plain"></i></li>
-                        <li><i class="icon-technologie-uses devicon-html5-plain"></i></li>
-                        <li><i class="icon-technologie-uses devicon-css3-plain"></i></li>
-                        <li><i class="icon-technologie-uses devicon-javascript-plain"></i></li>
-                        <li><i class="icon-technologie-uses devicon-git-plain"></i></li>
-                     </ul>
-                  </article>
-               </div>
-               <div class="grid-item item-project-color-pink" data-anijs="if: scroll, on: window, do: rotateIn animated, before: $scrollReveal repeat">
-                  <article class="item-project">
-                     <h1>Toitures Poitevines V2</h1>
-                     <p>Projet Personnel</p>
-                     <ul>
-                        <li><i class="icon-technologie-uses devicon-symfony-plain"></i></li>
-                        <li><i class="icon-technologie-uses devicon-photoshop-plain"></i></li>
-                        <li><i class="icon-technologie-uses devicon-html5-plain"></i></li>
-                        <li><i class="icon-technologie-uses devicon-css3-plain"></i></li>
-                        <li><i class="icon-technologie-uses devicon-javascript-plain"></i></li>
-                     </ul>
-                  </article>
-               </div>
-               <a href="#CDTT17">
-                  <div class="grid-item item-project-color-orange" data-anijs="if: scroll, on: window, do: rubberBand animated, before: $scrollReveal repeat">
-                     <article class="item-project">
-                        <h1>CDTT 17</h1>
-                        <p>Projet IUT</p>
+               <div class="col-md-6 grid-item item-project-color-purple">
+                  <article class="item-project ">
+                     <div class="item-project-info">
+                        <h1>PortFolio</h1>
+                        <p>Projet Personnel</p>
                         <ul>
-                           <li><i class="icon-technologie-uses devicon-wordpress-plain"></i></li>
-                           </li>
+                           <li><i class="icon-technologie-uses devicon-html5-plain"></i></li>
+                           <li><i class="icon-technologie-uses devicon-css3-plain"></i></li>
+                           <li><i class="icon-technologie-uses devicon-gulp-plain"></i></li>
+                           <li><i class="icon-technologie-uses devicon-jquery-plain"></i></li>
                         </ul>
-                     </article>
-                  </div>
-               </a>
+                        </div>
+                        <div class="item-project-info-links">
+                           <p><a href="#" class="hvr-hang" >Code source <i class="devicon-gitlab-plain"></i></a></p><p><a href="#" class="hvr-hang" >Demo <i class="devicon-chrome-plain"></i> </a></p>
+                        </div>
+                  </article>
+               </div>
             </div>
          </div>
       </section>
-      <section>
-         <div class="remodal" data-remodal-id="JardinsdesIles" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
-         <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-         <div>
-            <h2 id="modal1Title">Jardins des Iles</h2>
-            <p id="modal1Desc">
+      
+      <footer>
+         <div class="container padding-top-50">
             <div class="row">
-               <div class="col-md-6 align-center">
-                  <img src="img/jardinsdesiles.jpg" class="img-responsive">
-               </div>
-               <div class="col-md-6 text-align-left">
-                  Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin
-                  with declarative state notation and hash tracking.
-               </div>
-               </p>
+            <p>Mattéo Peronnet © Copyright 2017, Tous droits réservés</p>
             </div>
-            <br>
-            <button data-remodal-action="cancel" class="remodal-cancel">Fermer</button>
-            <a href="http://www.jardinsdesiles.fr"><button class="remodal-confirm">Visiter</button></a>
          </div>
-         <div class="remodal" data-remodal-id="CDTT17" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
-         <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-         <div>
-            <h2 id="modal1Title">Comité départemental de Tennis de Table de Charente Maritime</h2>
-            <p id="modal1Desc">
-            <div class="row">
-               <div class="col-md-6 align-center">
-                  <img src="img/cddtt17.jpg" class="img-responsive">
-               </div>
-               <div class="col-md-6 text-align-left">
-                  Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin
-                  with declarative state notation and hash tracking.
-               </div>
-               </p>
-            </div>
-            <br>
-            <button data-remodal-action="cancel" class="remodal-cancel">Fermer</button>
-            <a href="http://cd-tennisdetable17.com/"><button class="remodal-confirm">Visiter</button></a>
-         </div>
-      </section>
+      </footer>
       <script src="js/js.min.js"></script>
    </body>
 </html>

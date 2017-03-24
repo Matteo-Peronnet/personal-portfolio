@@ -1,0 +1,28 @@
+@media (max-width: 480px) { 
+	.btn-curriculum-vitae{
+		margin-top: 15px;
+	}	
+}
+@media (max-width: 750px) { 
+	.bubble{
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 00px;
+		border-radius: 0px;
+		border: $theme-default solid 0px;
+	}
+	.bubble:before{
+		display: none;
+	}
+	.bubble:after{
+		display: none;
+	}
+	
+}
+@media (max-width: 970px) { 
+	.card-experience{
+		margin-top: 50px;
+	}
+	.grid-item{
+		height: auto;
+	}
+}

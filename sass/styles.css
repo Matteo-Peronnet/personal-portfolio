@@ -5942,12 +5942,6 @@ html.remodal-is-locked {
     background-color: #FFF;
     color: #30697d; }
 
-.row-eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-
 * {
   box-sizing: border-box; }
 
@@ -6413,17 +6407,6 @@ button {
     -webkit-tap-highlight-color: transparent;
     -webkit-font-smoothing: antialiased; }
 
-footer {
-  margin-top: 50px;
-  color: #FFF;
-  font-size: 14px;
-  text-align: center;
-  position: relative;
-  background-color: rgba(67, 89, 100, 0.97); }
-
-@media (max-width: 480px) {
-  .btn-curriculum-vitae {
-    margin-top: 15px; } }
 @media (max-width: 750px) {
   .bubble {
     -webkit-border-radius: 0px;

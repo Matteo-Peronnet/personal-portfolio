@@ -27,4 +27,9 @@
 		            top: 100
 		        }
 		    })
+			$(".grid-item" ).on('mouseenter',function(){
+			  $(this).children().children().first().next().css("visibility","visible");
+			  $(this).children().children().first().next().addClass("animated fadeInUp");
+			});
+			
 		})(jQuery); 

@@ -1,15 +1,16 @@
-
+.logo{
+	padding: 5px;
+}
 .header-content:before{
     content: " ";
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: -1;
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url("../img/header.jpg");
     opacity: 1;
 }
@@ -25,7 +26,11 @@
 
 .header-content-inner{
 	text-align: center;
-	padding-top: 50vh;
+	position: absolute;
+	top: 40%; /* poussé de la moitié de hauteur du référent */
+	transform: translateY(-40%); /* tiré de la moitié de sa propre hauteur */
+	right: 50%;
+	transform: translateX(50%);
 	text-transform: uppercase;
 	h1{
 		font-size: 50px;
@@ -58,14 +63,71 @@
 	font-size: 18px;
 	color: #737373;
 }
+.bubble 
+{
+	position: relative;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	background: #FFFFFF;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 5px;
+	border: $theme-default solid 3px;
+}
+
+.bubble:after 
+{
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 29px 32px 29px 0;
+	border-color: transparent #FFFFFF;
+	display: block;
+	width: 0;
+	z-index: 1;
+	margin-top: -29px;
+	left: -32px;
+	top: 50%;
+}
+
+.bubble:before 
+{
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 31px 34px 31px 0;
+	border-color: transparent $theme-default;
+	display: block;
+	width: 0;
+	z-index: 0;
+	margin-top: -31px;
+	left: -37px;
+	top: 50%;
+}
 .personal-info-button{
-	margin-left: 50%;
 	font-family: 'Roboto', sans-serif;
 	background-color: $blue;
 	color: #FFF;
 	text-transform: uppercase;
 	font-weight: semi-bold;
 	padding: 15px;
+	display: inline-block;
+	&:hover{
+		transition-duration: 0.3s;
+		background-color: #30697d;
+		border: 1px solid #737373;
+	}
+}
+.personal-cv-button{
+	font-family: 'Roboto', sans-serif;
+	background-color: $blue;
+	color: #FFF;
+	text-transform: uppercase;
+	font-weight: semi-bold;
+	padding: 15px;
+	display: inline-block;
+	float: right;
 	&:hover{
 		transition-duration: 0.3s;
 		background-color: #30697d;
@@ -228,6 +290,7 @@
 	background: -webkit-linear-gradient(45deg,  rgba(133,107,123,1) 0%,rgba(48,105,125,0.6) 51%,rgba(133,107,123,1) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(45deg,  rgba(133,107,123,1) 0%,rgba(48,105,125,0.6) 51%,rgba(133,107,123,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#856b7b', endColorstr='#856b7b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	
 }
 .experience-pro, .experience-sco{
 	padding-top: 40px;
@@ -247,6 +310,7 @@
 		font-size: 30px;
 		text-transform: uppercase;
 		font-weight: 400;
+		word-wrap: break-word;
 	}
 	article{
 		h2{
@@ -267,16 +331,15 @@
 }
 /* Project */
 .grid-item {
-  float: left;
-  width: auto;
-  height: auto;
-  color: #FFF;
-  padding: 50px;
+  color: #FFF; 
   border: 2px solid hsla(0, 0%, 0%, 0.1);
+  height: 270px;
 }
 .grid-item:hover{
-	cursor: pointer;
-	color: #000;
+
+	p{
+		animation-name: fadeDownProject;
+	}
 }
 .item-project-color-blue{
 	background-color: $blue;
@@ -293,14 +356,59 @@
 .item-project-color-brown{
 	background-color: $brown;
 }
+.item-project-color-purple{
+	background-color: $purple;
+}
 .icon-technologie-uses{
 	text-align: center;
 	font-size: 30px;
 }
 .item-project{
-	ul li{
-		margin-left: 15px;
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+	text-align: center;
+	ul{
+		display: inline-block;
+		margin: 0 auto;
+		li{
+			margin-left: 15px;
+		}
+	}
+}
+.item-project-info{
+	p{
+		font-size: 18px;
+	}
+}
+.item-project-info-links{
+	font-size: 18px;
+	margin-top: 10px;
+	display: inline-block;
+	visibility: hidden;
+	p{
+		display: inline-block;
+		float: left;
+	}
+	a{
+		    margin: .4em;
+    padding: 1em;
+    cursor: pointer;
+    background: #e1e1e1;
+    text-decoration: none;
+    color: #666;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
 	}
 }
 
 
+footer{
+	margin-top: 50px;
+    color: #FFF;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    background-color: rgba(67, 89, 100, 0.97);
+}
