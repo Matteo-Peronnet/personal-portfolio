@@ -3,5 +3,5 @@ Le but de ce portfolio permet de montrer mes compétences a travers les différe
 ## Installation
 
 ```git
-git clone git@93.22.40.57:matteop/personal-portfolio.git
+git clone https://github.com/Matteo-Peronnet/personal-portfolio.git
 ```
